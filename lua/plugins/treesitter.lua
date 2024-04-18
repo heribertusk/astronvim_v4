@@ -12,7 +12,6 @@ return {
       "vue",
       "javascript",
       "typescript",
-      "html",
       "css",
       "scss",
       -- add more arguments for adding more treesitter parsers

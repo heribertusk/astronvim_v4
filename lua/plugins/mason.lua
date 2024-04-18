@@ -14,8 +14,8 @@ return {
         "tsserver",
         "cssls",
         "tailwindcss",
+        "intelephense"
         -- "phpactor",
-        -- "intelephense"
         -- add more arguments for adding more language servers
         -- pick one between phpactor or intelephense for php lsp
       })
