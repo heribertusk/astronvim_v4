@@ -79,5 +79,10 @@ return {
         -- ["<esc>"] = false,
       },
     },
+    filetypes = {
+      pattern = {
+        [".*.php.blade"] = "blade",
+      },
+    },
   },
 }

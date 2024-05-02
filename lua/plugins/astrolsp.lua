@@ -27,6 +27,7 @@ return {
           "php",
           "lua",
           "ts",
+          "blade",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -38,9 +39,10 @@ return {
         "emmet_ls",
         "intelephense", -- disable formatting by intelephense, using pint as php formatter
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 3600, -- default format timeout
       filter = function(client) -- fully override the default formatting function
         if vim.bo.filetype == "vue" then return client.name == "volar" end
+        if vim.bo.filetype == "blade" then return client.name == "blade-formatter" end
         return true
       end,
     },

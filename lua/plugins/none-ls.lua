@@ -14,7 +14,7 @@ return {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettierd,
-      null_ls.builtins.formatting.blade_formatter,
+      -- null_ls.builtins.formatting.blade_formatter,
       null_ls.builtins.formatting.pint
     }
     return config -- return final config table
