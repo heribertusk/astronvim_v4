@@ -5,7 +5,9 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  -- { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.tint-nvim" },
   { import = "astrocommunity.media.vim-wakatime" },
@@ -14,6 +16,5 @@ return {
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
-  { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
   -- import/override with your plugins folder
 }

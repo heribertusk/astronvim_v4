@@ -38,6 +38,7 @@ return {
         "lua_ls",
         "emmet_ls",
         "intelephense", -- disable formatting by intelephense, using pint as php formatter
+        "tsserver",
       },
       timeout_ms = 3600, -- default format timeout
       filter = function(client) -- fully override the default formatting function
