@@ -35,6 +35,7 @@ return {
         softtabstop = 2,
         expandtab = true,
         smartindent = true,
+        conceallevel = 1,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
