@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.color.tint-nvim" },
   { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.pack.tailwindcss" },
