@@ -12,7 +12,7 @@ return {
     features = {
       autoformat = false, -- enable or disable auto formatting on start
       codelens = true, -- enable/disable codelens refresh on start
-      inlay_hints = true, -- enable/disable inlay hints on start
+      inlay_hints = false, -- enable/disable inlay hints on start
       semantic_tokens = true, -- enable/disable semantic token highlighting
     },
     -- customize lsp formatting options
@@ -29,9 +29,9 @@ return {
           -- "ts",
           -- "blade",
         },
-        ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
-        },
+        -- ignore_filetypes = { -- disable format on save for specified filetypes
+        --   "python",
+        -- },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
@@ -39,11 +39,13 @@ return {
         "emmet_ls",
         "intelephense", -- disable formatting by intelephense, using pint as php formatter
         "tsserver",
+        "prettierd",
+        "prettier",
       },
       timeout_ms = 3600, -- default format timeout
-      filter = function(client) -- fully override the default formatting function
-        if vim.bo.filetype == "vue" then return client.name == "volar" end
-        if vim.bo.filetype == "blade" then return client.name == "blade-formatter" end
+      filter = function() -- fully override the default formatting function
+        -- if vim.bo.filetype == "vue" then return client.name == "volar" end
+        -- if vim.bo.filetype == "blade" then return client.name == "blade-formatter" end
         return true
       end,
     },
