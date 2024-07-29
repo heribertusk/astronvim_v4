@@ -41,11 +41,12 @@ return {
         "tsserver",
         "prettierd",
         "prettier",
+        "vtsls"
       },
       timeout_ms = 3600, -- default format timeout
-      filter = function() -- fully override the default formatting function
+      filter = function(client) -- fully override the default formatting function
         -- if vim.bo.filetype == "vue" then return client.name == "volar" end
-        -- if vim.bo.filetype == "blade" then return client.name == "blade-formatter" end
+        if vim.bo.filetype == "blade" then return client.name == "blade-formatter" end
         return true
       end,
     },
