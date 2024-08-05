@@ -17,8 +17,8 @@ return {
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.blade_formatter,
       null_ls.builtins.formatting.pint,
-      null_ls.builtins.formatting.prettierd,
-      -- null_ls.builtins.formatting.eslint_d
+      -- null_ls.builtins.formatting.prettierd,
+      -- null_ls.builtins.formatting.prettier,
     }
     return config -- return final config table
   end,
