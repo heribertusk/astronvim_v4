@@ -11,10 +11,9 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         -- "lua_ls",
         "volar",
-        "tsserver",
         "cssls",
         "tailwindcss",
-        "intelephense"
+        "intelephense",
         -- "phpactor",
         -- add more arguments for adding more language servers
         -- pick one between phpactor or intelephense for php lsp
