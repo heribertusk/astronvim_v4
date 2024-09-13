@@ -19,11 +19,11 @@ return {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = false, -- enable or disable format on save globally
+        enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
           -- "vue",
-          -- "js",
+          "js",
           "php",
           "lua",
           -- "ts",
@@ -40,11 +40,11 @@ return {
         "intelephense", -- disable formatting by intelephense, using pint as php formatter
         "tsserver",
         "vtsls",
-        "volar"
+        "volar",
       },
       timeout_ms = 3600, -- default format timeout
       filter = function(client) -- fully override the default formatting function
-        if vim.bo.filetype == "vue" then return client.name == "volar" end
+        -- if vim.bo.filetype == "vue" then return client.name == "volar" end
         if vim.bo.filetype == "blade" then return client.name == "blade-formatter" end
         return true
       end,
